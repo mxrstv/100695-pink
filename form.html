@@ -35,94 +35,128 @@
         <br>Пожалуйста, заполните форму ниже:
   </p>
   <form class="frm-contest" action="echo" method="post">
-    <label for="frm-contest-name">Имя:*</label>
-      <input value="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name">
-    <label for="frm-contest-surname">Фамилия:*</label>
-      <input value="Укажите фамилию" type="text" name="contest-surname" id="frm-contest-surname">
-    <label for="frm-contest-patronymic">Отчество:*</label>
-      <input value="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
-    <label for="frm-contest-app1">C каким приложением
-      <br>путешествовали?*
-    </label>
-      <input value="Pink для iOS" type="radio" checked name="contest-app" id="frm-contest-app1">
-      <input value="Pink для Android" type="radio" name="contest-app" id="frm-contest-app2">
-      <input value="Windows Phone" type="radio" name="contest-app" id="frm-contest-app3">
-    <div>Когда ва путешествовали?*</div>
-    <input value="1 апреля 2015" type="text" name="contest-date-begin" id="frm-contest-date-begin">
+    <fieldset>
+      <label for="frm-contest-name">Имя:*</label>
+      <input placeholder="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name" required>
+      <label for="frm-contest-surname">Фамилия:*</label>
+      <input placeholder="Укажите фамилию" type="text" name="contest-surname" id="frm-contest-surname" required>
+      <label for="frm-contest-patronymic">Отчество:*</label>
+      <input placeholder="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
+    </fieldset>
+    <fieldset>
+      <legend>C каким приложением
+        <br>путешествовали?*
+      </legend>
+        <label>
+          <input value="Pink для iOS" required type="radio" checked name="contest-app">
+          Pink для iOS
+        </label>
+        <label>
+          <input value="Pink для Android" required type="radio" name="contest-app">
+          Pink для Android
+        </label>
+        <label>
+          <input value="Windows Phone" required type="radio" name="contest-app">
+          Windows Phone
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>Когда ва путешествовали?*</legend>
+      <input required placeholder="1 апреля 2015" type="text" name="contest-date-begin" id="frm-contest-date-begin">
       <label for="frm-contest-date-begin">Дата выезда</label>
-    <input value="10 дней" type="text" name="contest-days" id="frm-contest-days">
+      <input required placeholder="10 дней" type="text" name="contest-days" id="frm-contest-days">
       <label for="frm-contest-days">Продолжительность</label>
-    <input value="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
+      <input required placeholder="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
       <label for="frm-contest-date-end">Дата возвращения</label>
-    <label for="frm-travel-companions">Количество попутчиков</label>
-      <input value="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
-
-    <label for="frm-contest-companion1">№ Имя:*</label>
+    </fieldset>
+    <fieldset>
+      <label for="frm-travel-companions">Количество попутчиков</label>
+      <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
+      <label for="frm-contest-companion1">№ Имя:*</label>
       <div class="companion-num">1</div>
-      <input value="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
-    <label for="frm-contest-companion-nick1">Прозвище</label>
-      <input value="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
+      <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
+      <label for="frm-contest-companion-nick1">Прозвище</label>
+      <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
+      <label for="frm-contest-companion2">№ Имя:*</label>
+      <div class="companion-num">2</div>
+      <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
+      <label for="frm-contest-companion-nick2">Прозвище</label>
+      <input placeholder="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
+    </fieldset>
 
-    <label for="frm-contest-companion2">№ Имя:*</label>
-    <div class="companion-num">2</div>
-    <input value="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
-    <label for="frm-contest-companion-nick2">Прозвище</label>
-    <input value="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
+    <fieldset>
+      <legend>Ваши безбашенные
+        <br>достижения в путешествии
+      </legend>
+      <label>
+          <input type="checkbox" checked name="a1">
+          Сделал селфи с акулой
+        </label>
+      <label>
+          <input type="checkbox" checked name="a1">
+          Обгорел на пляже
+        </label>
+      <label>
+          <input type="checkbox" name="a1">
+          Видел Чака Норриса
+        </label>
+      <label>
+          <input type="checkbox" name="a1">
+          Накупил сувениров
+        </label>
+      <label>
+          <input type="checkbox" checked name="a1">
+          Удержал башню
+        </label>
+      <label>
+        <input type="checkbox" name="a1">
+        Разгромил отель
+      </label>
+    </fieldset>
 
-
-    <label>Ваши безбашенные
-      <br>достижения в путешествии
-    </label>
-      <input value="Сделал селфи с акулой" type="checkbox" checked name="a1">
-      <input value="Обгорел на пляже" type="checkbox" checked name="a2">
-      <input value="Видел Чака Норриса" type="checkbox" name="a3">
-      <input value="Накупил сувениров" type="checkbox" name="a4">
-      <input value="Удержал башню" type="checkbox" checked name="a5">
-      <input value="Разгромил отель" type="checkbox" name="a6">
-
-    <label>Ваши фотографии из поездки*</label>
+    <div>Ваши фотографии из поездки*</div>
     <a href="#">Загрузить фото</a>
     <div class="foto-container">
-      <div class="foto-item">
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-1.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-1.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-2.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-2.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-3.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-3.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-4.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-4.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-5.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-5.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-6.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-6.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-7.jpg</div>
-      </div>
-      <div class="foto-item">
+        <figcaption class="foto-file">img-7.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
         <div class="foto-del-btn">Удалить</div>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
-        <div class="foto-file">img-8.jpg</div>
-      </div>
+        <figcaption class="foto-file">img-8.jpg</figcaption>
+      </figure>
     </div>>
 
     <button type="submit">Отправить форму</button>
