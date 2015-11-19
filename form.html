@@ -6,9 +6,9 @@
 </head>
 <body>
   <div class="top-menu">
-    <div>Pink</div>
+    <a href="index.html">Pink</a>
     <a class="menu-btn" href="#"></a>
-    <nav class="mobile-menu">
+    <nav class="nav">
       <ul>
         <li>
           <a href="#">Информация</a>
@@ -25,16 +25,13 @@
       </ul>
     </nav>
   </div>
-  <h1>Конкурс на самое
-    <br>безбашенное
-      <br>путешествие с Пинк
-  </h1>
-  <p>Поделитесь своей историей и получите
-    <br>шанс выиграть ценный приз — 1000
-      <br>миль на вашу бонусную карту!
-        <br>Пожалуйста, заполните форму ниже:
+  <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <p>Поделитесь своей историей и получите шанс
+    выиграть ценный приз — 1000 миль на вашу
+    бонусную карту! Пожалуйста, заполните
+    форму ниже:
   </p>
-  <form class="frm-contest" action="echo" method="post">
+  <form class="frm-contest" enctype="multipart/form-data" action="echo" method="post">
     <fieldset>
       <label for="frm-contest-name">Имя:*</label>
       <input placeholder="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name" required>
@@ -44,8 +41,7 @@
       <input placeholder="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
     </fieldset>
     <fieldset>
-      <legend>C каким приложением
-        <br>путешествовали?*
+      <legend>C каким приложением путешествовали?*
       </legend>
         <label>
           <input value="Pink для iOS" required type="radio" checked name="contest-app">
@@ -66,94 +62,94 @@
       <label for="frm-contest-date-begin">Дата выезда</label>
       <input required placeholder="10 дней" type="text" name="contest-days" id="frm-contest-days">
       <label for="frm-contest-days">Продолжительность</label>
-      <input required placeholder="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
+      <input required disabled placeholder="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
       <label for="frm-contest-date-end">Дата возвращения</label>
     </fieldset>
     <fieldset>
       <label for="frm-travel-companions">Количество попутчиков</label>
       <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
       <label for="frm-contest-companion1">№ Имя:*</label>
-      <div class="companion-num">1</div>
+      <span class="companion-num">1</span>
       <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
       <label for="frm-contest-companion-nick1">Прозвище</label>
       <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
       <label for="frm-contest-companion2">№ Имя:*</label>
-      <div class="companion-num">2</div>
+      <span class="companion-num">2</span>
       <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
       <label for="frm-contest-companion-nick2">Прозвище</label>
       <input placeholder="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
     </fieldset>
 
     <fieldset>
-      <legend>Ваши безбашенные
-        <br>достижения в путешествии
+      <legend>Ваши безбашенные достижения в путешествии
       </legend>
       <label>
-          <input type="checkbox" checked name="a1">
-          Сделал селфи с акулой
-        </label>
+        <input type="checkbox" checked name="a1">
+        Сделал селфи с акулой
+      </label>
       <label>
-          <input type="checkbox" checked name="a1">
-          Обгорел на пляже
-        </label>
+        <input type="checkbox" checked name="a1">
+        Обгорел на пляже
+      </label>
       <label>
-          <input type="checkbox" name="a1">
-          Видел Чака Норриса
-        </label>
+        <input type="checkbox" name="a1">
+        Видел Чака Норриса
+      </label>
       <label>
-          <input type="checkbox" name="a1">
-          Накупил сувениров
-        </label>
+        <input type="checkbox" name="a1">
+        Накупил сувениров
+      </label>
       <label>
-          <input type="checkbox" checked name="a1">
-          Удержал башню
-        </label>
+        <input type="checkbox" checked name="a1">
+        Удержал башню
+      </label>
       <label>
         <input type="checkbox" name="a1">
         Разгромил отель
       </label>
     </fieldset>
 
-    <div>Ваши фотографии из поездки*</div>
-    <a href="#">Загрузить фото</a>
+    <label for="btn-foto-load">Ваши фотографии из поездки*</label>
+    <input type="file" id="btn-foto-load" name="foto-load">
+
     <div class="foto-container">
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-1.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-2.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-3.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-4.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-5.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-6.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-7.jpg</figcaption>
       </figure>
       <figure class="foto-item">
-        <div class="foto-del-btn">Удалить</div>
+        <button type="button" class="foto-del-btn">Удалить</button>
         <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
         <figcaption class="foto-file">img-8.jpg</figcaption>
       </figure>
@@ -163,18 +159,13 @@
     <div>*-Обязательные поля</div>
   </form>
   <footer>
+    <a href="index.html">Pink</a>
     <div>
-      <img src="#" alt="placehold" width="50" height="50">
-      Pink
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">You tube</a>
     </div>
-    <div>
-      <img src="#" alt="placehold" width="50" height="50">
-      <img src="#" alt="placehold" width="50" height="50">
-      <img src="#" alt="placehold" width="50" height="50">
-    </div>
-    <div>Разработано
-      <img src="#" alt="placehold" width="50" height="50">
-    </div>
+    <a>Разработано</a>
   </footer>
 
 </body>
