@@ -8,8 +8,8 @@
     <div class="header">
       <a class="logo" href="index.html">Pink</a>
       <a class="nav-icon nav-icon--close" href="#"></a>
-      <nav class="nav header__nav">
-        <ul>
+      <nav class="nav">
+        <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">Информация</a>
           </li>
@@ -25,10 +25,14 @@
         </ul>
       </nav>
     </div>
+
+
     <section class="intro">
       <h1 class="intro__text">Взгляните на жизнь иначе</h1>
       <img class="intro__image" src="#" alt="placehold" width="50" height="50">
     </section>
+
+
     <section class="app">
       <a class="app__load-btn" href="#">Скачать приложение</a>
       <div class="app__icons" >
@@ -58,6 +62,8 @@
       </div>
       <img class="phone-image" src="#" alt="placehold" width="50" height="50">
     </section>
+
+
     <section class="reviews">
       <div class="slider">
         <div class="slider__item">
@@ -85,35 +91,37 @@
         </div>
       </div>
     </section>
+
+
     <section class="shop">
       <div class="slider">
         <div class="slider__item">
           <table class="rates">
-            <tr>
-              <td>
+            <tr class="rates__head">
+              <td class="rates__price">
                 <div>База</div>
                 <div>1,99 USD</div>
               </td>
-              <td>
+              <td class="rates__price  rates__price--marker">
                 <div>Стандарт</div>
                 <div>3,99 USD</div>
               </td>
-              <td>
-                <div>Андим</div>
+              <td class="rates__price">
+                <div>Анлим</div>
                 <div>9,99 USD</div>
               </td>
             </tr>
-            <tr>
+            <tr class="rates__option">
               <td>Розовый фильтр</td>
               <td>Розовый фильтр</td>
               <td>Розовый фильтр</td>
             </tr>
-            <tr>
+            <tr class="rates__option">
               <td>Смайлики</td>
               <td>Смайлики</td>
               <td>Смайлики</td>
             </tr>
-            <tr>
+            <tr class="rates__option">
               <td>Коментарии</td>
               <td>Коментарии</td>
               <td>Коментарии</td>
@@ -123,26 +131,26 @@
 
         </div>
       </div>
-      <div class="slider__switch  slider__switсh--rate-review">
+      <div class="slider__switch  slider__switсh--rate">
         <i></i>
         <i class="slider__switch--active"></i>
         <i></i>
       </div>
     </section>
+
+
     <section class="contacts">
-      <p>Остались вопросы? Свяжитесь с нами!</p>
-      <h2>Звоните:</h2>
-      <p>+7(812) 555-66-66</p>
-      <h2>Пишите:</h2>
-      <p>mail@htmlacademy.ru</p>
-      <h2>Приезжайте в гости:</h2>
+      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <h2 class="contacts__item-descr">Звоните:</h2>
+      <p class="contacts__item">+7(812) 555-66-66</p>
+      <h2 class="contacts__item-descr">Пишите:</h2>
+      <p class="contacts__item">mail@htmlacademy.ru</p>
+      <h2 class="contacts__item-descr">Приезжайте в гости:</h2>
       <p>ул. Большая Конюшенная, 19/8</p>
-      <div class="map">
+      <div class="contacts__map">
         <img src="#" alt="placehold" width="50" height="50">
       </div>
     </section>
-
-
 
 
   </body>
