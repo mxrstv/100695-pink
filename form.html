@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конкурс</title>
+</head>
+<body>
+  <div class="top-menu">
+    <a href="index.html">Pink</a>
+    <a class="menu-btn" href="#"></a>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Блог</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li>
+        <li>
+          <a href="#">Конкурс</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <p>Поделитесь своей историей и получите шанс
+    выиграть ценный приз — 1000 миль на вашу
+    бонусную карту! Пожалуйста, заполните
+    форму ниже:
+  </p>
+  <form class="frm-contest" enctype="multipart/form-data" action="echo" method="post">
+    <fieldset>
+      <label for="frm-contest-name">Имя:*</label>
+      <input placeholder="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name" required>
+      <label for="frm-contest-surname">Фамилия:*</label>
+      <input placeholder="Укажите фамилию" type="text" name="contest-surname" id="frm-contest-surname" required>
+      <label for="frm-contest-patronymic">Отчество:*</label>
+      <input placeholder="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
+    </fieldset>
+    <fieldset>
+      <legend>C каким приложением путешествовали?*
+      </legend>
+        <label>
+          <input value="Pink для iOS" required type="radio" checked name="contest-app">
+          Pink для iOS
+        </label>
+        <label>
+          <input value="Pink для Android" required type="radio" name="contest-app">
+          Pink для Android
+        </label>
+        <label>
+          <input value="Windows Phone" required type="radio" name="contest-app">
+          Windows Phone
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>Когда ва путешествовали?*</legend>
+      <input required placeholder="1 апреля 2015" type="text" name="contest-date-begin" id="frm-contest-date-begin">
+      <label for="frm-contest-date-begin">Дата выезда</label>
+      <input required placeholder="10 дней" type="text" name="contest-days" id="frm-contest-days">
+      <label for="frm-contest-days">Продолжительность</label>
+      <input required disabled placeholder="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
+      <label for="frm-contest-date-end">Дата возвращения</label>
+    </fieldset>
+    <fieldset>
+      <label for="frm-travel-companions">Количество попутчиков</label>
+      <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
+      <label for="frm-contest-companion1">№ Имя:*</label>
+      <span class="companion-num">1</span>
+      <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
+      <label for="frm-contest-companion-nick1">Прозвище</label>
+      <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
+      <label for="frm-contest-companion2">№ Имя:*</label>
+      <span class="companion-num">2</span>
+      <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
+      <label for="frm-contest-companion-nick2">Прозвище</label>
+      <input placeholder="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
+    </fieldset>
+
+    <fieldset>
+      <legend>Ваши безбашенные достижения в путешествии
+      </legend>
+      <label>
+        <input type="checkbox" checked name="a1">
+        Сделал селфи с акулой
+      </label>
+      <label>
+        <input type="checkbox" checked name="a1">
+        Обгорел на пляже
+      </label>
+      <label>
+        <input type="checkbox" name="a1">
+        Видел Чака Норриса
+      </label>
+      <label>
+        <input type="checkbox" name="a1">
+        Накупил сувениров
+      </label>
+      <label>
+        <input type="checkbox" checked name="a1">
+        Удержал башню
+      </label>
+      <label>
+        <input type="checkbox" name="a1">
+        Разгромил отель
+      </label>
+    </fieldset>
+
+    <label for="btn-foto-load">Ваши фотографии из поездки*</label>
+    <input type="file" id="btn-foto-load" name="foto-load">
+
+    <div class="foto-container">
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-1.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-2.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-3.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-4.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-5.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-6.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-7.jpg</figcaption>
+      </figure>
+      <figure class="foto-item">
+        <button type="button" class="foto-del-btn">Удалить</button>
+        <img class="foto-icon" src="#" alt="placehold" width="50" height="50">
+        <figcaption class="foto-file">img-8.jpg</figcaption>
+      </figure>
+    </div>>
+
+    <button type="submit">Отправить форму</button>
+    <div>*-Обязательные поля</div>
+  </form>
+  <footer>
+    <a href="index.html">Pink</a>
+    <div>
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">You tube</a>
+    </div>
+    <a>Разработано</a>
+  </footer>
+
+</body>
+</html>
