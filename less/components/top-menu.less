@@ -1,55 +1,20 @@
 @import "../variables.less";
-@import "../general.less";
+
 
 .top-menu {
   background-color: @menu-color;
   //min-width: @sm-screen;
-  padding: 21px 6%;
+  padding: 22px 6%;
   display: flex;
   justify-content: space-between;
-  //flex-wrap: wrap;
-  position: relative;
+  flex-wrap: wrap;
+  //position: relative;
   z-index: 100;
   &__logo{
 
   }
 }
-.main-menu{
-  display:none;
-  position: absolute;
-  z-index: 80;
-  top: 0;
-  left: 0;
-  width: 100%;
 
-  background-color: @menu-color;
-  ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-  li{
-    width:100%;
-  }
-  a{
-    display:flex;
-    justify-content: center;
-    font-size: 18px;
-    line-height: 32px;
-    font-family: @font-family;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration:none;
-    width:100%;
-
-  }
-}
 
 
 
