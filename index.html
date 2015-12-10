@@ -5,53 +5,65 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <div class="top-menu">
-      <a href="#">Pink</a>
-      <a class="menu-btn" href="#"></a>
-      <nav class="mobile-menu">
-        <ul>
-          <li>
-            <a href="#">Информация</a>
+    <div class="header">
+      <a class="logo" href="index.html">Pink</a>
+      <a class="nav-icon nav-icon--close" href="#"></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Информация</a>
           </li>
-          <li>
-            <a href="#">Блог</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Блог</a>
           </li>
-          <li>
-            <a href="#">Отзывы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Блог</a>
           </li>
-          <li>
-            <a href="#">Конкурс</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Блог</a>
           </li>
         </ul>
       </nav>
     </div>
+
+
     <section class="intro">
-      <h1>Взгляните на жизнь иначе</h1>
-      <img src="#" alt="placehold" width="50" height="50">
+      <h1 class="intro__text">Взгляните на жизнь иначе</h1>
+      <img class="intro__image" src="#" alt="placehold" width="50" height="50">
     </section>
-    <section class="applicaitions">
-      <a href="#">Скачать приложение</a>
-      <div>
+
+
+    <section class="app">
+      <a class="app__load-btn" href="#">Скачать приложение</a>
+      <div class="app__icons" >
         <img src="#" alt="placehold" width="50" height="50">
         <img src="#" alt="placehold" width="50" height="50">
         <img src="#" alt="placehold" width="50" height="50">
       </div>
-      <div>Доступно для iPhone, iPad, Android,
+      <div class="app__text">Доступно для iPhone, iPad, Android,
           Windows Phone, OS X, Windows 8
       </div>
 
     </section>
     <section class="info">
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
-      <h2>Поднимает настроение</h2>
-      <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-      <h2>Меняет мир вокруг</h2>
-      <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <h2>Заводит новых друзей</h2>
-      <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-      <img src="#" alt="placehold" width="50" height="50">
+      <p class="info__feature">Устали от серости мегаполиса?</p>
+      <p class="info__feature">Нам есть, что вам предложить!</p>
+      <div class="info__feature__block">
+        <h2>Поднимает настроение</h2>
+        <p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+      </div>
+      <div class="info__feature__block">
+        <h2>Меняет мир вокруг</h2>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="info__feature__block">
+        <h2>Заводит новых друзей</h2>
+        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+      <img class="phone-image" src="#" alt="placehold" width="50" height="50">
     </section>
+
+
     <section class="reviews">
       <div class="slider">
         <div class="slider__item">
@@ -65,6 +77,12 @@
               комментариях к выложенной фотографии!»
             </p>
           </article>
+          <article class="app-review">
+            <h1 class="app-review__user">Иванова Мария</h1>
+            <p class="app-review__text">
+              Отзыв
+            </p>
+          </article>
         </div>
         <div class="slider__switch  slider__switсh--app-review">
           <i></i>
@@ -73,35 +91,37 @@
         </div>
       </div>
     </section>
+
+
     <section class="shop">
       <div class="slider">
         <div class="slider__item">
           <table class="rates">
-            <tr>
-              <td>
+            <tr class="rates__head">
+              <td class="rates__price">
                 <div>База</div>
                 <div>1,99 USD</div>
               </td>
-              <td>
+              <td class="rates__price  rates__price--marker">
                 <div>Стандарт</div>
                 <div>3,99 USD</div>
               </td>
-              <td>
-                <div>Андим</div>
+              <td class="rates__price">
+                <div>Анлим</div>
                 <div>9,99 USD</div>
               </td>
             </tr>
-            <tr>
+            <tr class="rates__option">
               <td>Розовый фильтр</td>
               <td>Розовый фильтр</td>
               <td>Розовый фильтр</td>
             </tr>
-            <tr>
+            <tr class="rates__option">
               <td>Смайлики</td>
               <td>Смайлики</td>
               <td>Смайлики</td>
             </tr>
-            <tr>
+            <tr class="rates__option">
               <td>Коментарии</td>
               <td>Коментарии</td>
               <td>Коментарии</td>
@@ -111,26 +131,26 @@
 
         </div>
       </div>
-      <div class="slider__switch  slider__switсh--rate-review">
+      <div class="slider__switch  slider__switсh--rate">
         <i></i>
         <i class="slider__switch--active"></i>
         <i></i>
       </div>
     </section>
+
+
     <section class="contacts">
-      <p>Остались вопросы? Свяжитесь с нами!</p>
-      <h2>Звоните:</h2>
-      <p>+7(812) 555-66-66</p>
-      <h2>Пишите:</h2>
-      <p>mail@htmlacademy.ru</p>
-      <h2>Приезжайте в гости:</h2>
+      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <h2 class="contacts__item-descr">Звоните:</h2>
+      <p class="contacts__item">+7(812) 555-66-66</p>
+      <h2 class="contacts__item-descr">Пишите:</h2>
+      <p class="contacts__item">mail@htmlacademy.ru</p>
+      <h2 class="contacts__item-descr">Приезжайте в гости:</h2>
       <p>ул. Большая Конюшенная, 19/8</p>
-      <div class="map">
+      <div class="contacts__map">
         <img src="#" alt="placehold" width="50" height="50">
       </div>
     </section>
-
-
 
 
   </body>
