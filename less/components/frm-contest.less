@@ -1,8 +1,10 @@
 @import "../variables.less";
 .frm-contest{
-  padding: 45px 20px;
+  //padding: 45px 20px;
   background-color: white;
     &__text {
+      background-color: white;
+      padding: 45px 20px 0;
       font-family: @font-family;
       color: black;
       font-size: 14px;
@@ -17,8 +19,9 @@
     &__fields-group {
       display: flex;
       flex-direction: column;
+      padding: 0 20px;
 
-      label, legend{
+      label, legend {
         font-family: @font-family;
         color: @frm-label-color;
         font-size: 14px;
@@ -29,7 +32,7 @@
         padding-left: 23px;
         margin-bottom: 13px;
       }
-      legend{
+      legend {
         padding: 0;
         text-align: center;
       }
@@ -43,8 +46,11 @@
         vertical-align: middle;
         font-weight: normal;
         padding: 14px 22px;
-        width:100%;
+        width: 100%;
         margin-bottom: 25px;
+      }
+      input:last-of-type {
+        margin-bottom: 40px;
       }
       input::-webkit-input-placeholder {
         font-family: @font-family;
@@ -60,27 +66,31 @@
         line-height: 30px;
         font-weight: normal;
       }
-    }
-    &__fields-group--player{
-      background-color: white;
-    }
-  &__fields-group--player{
-    background-color: white;
-  }
-  &__fields-group--travel-app{
-    background-color: @light-gray-back-color;
-    padding-top: 107px;
-    legend{
-      position: relative;
-      top: 40px;
-      margin: 0;
-    }
-    label{
-      color: black;
-      text-transform: none;
-      font-size: 18px;
-      line-height: 30px;
 
+      &--player {
+        background-color: white;
+      }
+      &--travel-app {
+        //background-color: @light-gray-back-color;
+        background-color: green;
+        padding-top: 107px;
+        legend {
+          position: relative;
+          top: 40px;
+        }
+        label {
+          color: black;
+          text-transform: none;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+      &--travel-period {
+        padding-top: 107px;
+        legend {
+          position: relative;
+          top: 50px;
+        }
+      }
     }
-  }
 }
