@@ -1,0 +1,36 @@
+.foto-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid @input-border-color;
+  padding-top: 35px;
+  padding-bottom: 6px;
+}
+.foto-item {
+  height: 90px;
+  width: 68px;
+  position: relative;
+  margin-right: 38px;
+  margin-bottom: 26px;
+  &__icon {
+    margin-bottom: 5px;
+  }
+  &__file {
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  &__del-btn {
+    position: absolute;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: 2px solid @input-border-color;;
+    border-radius: 50%;
+    right: -16px;
+    top: -16px;
+  }
+}
+.foto-item:nth-of-type(3n) {
+  margin-right: 0;
+}

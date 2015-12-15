@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="top-menu">
-    <a class="top-menu__logo" href="#">Pink</a>
-    <a class="menu-btn" href="#">menu</a>
-    <nav class="main-menu">
-      <ul>
-        <li>
-          <a href="#">Информация</a>
-        </li>
-        <li>
-          <a href="#">Блог</a>
-        </li>
-        <li>
-          <a href="#">Отзывы</a>
-        </li>
-        <li>
-          <a href="#">Конкурс</a>
-        </li>
-      </ul>
-    </nav>
-  <h1 class="top-menu__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-</div>
+  <header class="main-header">
+    <div class="top-menu">
+      <a class="top-menu__logo" href="#">Pink</a>
+      <a class="top-menu__btn" href="#">Menu</a>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+          <li>
+            <a href="#">Конкурс</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
 
   <form class="frm-contest" enctype="multipart/form-data" action="echo" method="post">
     <p class="frm-contest__text">Поделитесь своей историей и получите шанс
@@ -45,18 +47,12 @@
     </fieldset>
     <fieldset class="frm-contest__fields-group  frm-contest__fields-group--travel-app">
       <h2>C каким приложением путешествовали?*</h2>
-        <label>
-          <input value="Pink для iOS" required type="radio" checked name="contest-app">
-          Pink для iOS
-        </label>
-        <label>
-          <input value="Pink для Android" required type="radio" name="contest-app">
-          Pink для Android
-        </label>
-        <label>
-          <input value="Windows Phone" required type="radio" name="contest-app">
-          Windows Phone
-        </label>
+        <input value="Pink для iOS" required type="radio" checked name="contest-app" id="contest-app-ios">
+        <label for="contest-app-ios">Pink для iOS</label>
+        <input value="Pink для Android" required type="radio" name="contest-app" id="contest-app-android">
+        <label for="contest-app-android">Pink для Android</label>
+        <input value="Windows Phone" required type="radio" name="contest-app" id="contest-app-wp">
+        <label for="contest-app-wp">Windows Phone</label>
     </fieldset>
 
     <fieldset class="frm-contest__fields-group  frm-contest__fields-group--travel-period">
@@ -72,14 +68,14 @@
     <fieldset class="frm-contest__fields-group  frm-contest__fields-group--companions">
       <label for="frm-travel-companions">Количество попутчиков</label>
       <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
-      <div class="frm_contest__companion-wrapper">
+      <div class="companion-wrapper">
         <label for="frm-contest-companion1">№ Имя:*</label>
         <span class="frm-contest__companion-num">1</span>
         <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
         <label for="frm-contest-companion-nick1">Прозвище</label>
         <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
       </div>
-      <div class="frm-contest__companion-wrapper">
+      <div class="companion-wrapper">
         <label for="frm-contest-companion2">№ Имя:*</label>
         <span class="frm-contest__companion-num">2</span>
         <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
@@ -117,58 +113,60 @@
       </label>
     </fieldset>
 
-    <label for="btn-foto-load">Ваши фотографии из поездки*</label>
-    <input type="file" id="btn-foto-load" name="foto-load">
-
-    <div class="foto-container">
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-1.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-2.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-3.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-4.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-5.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-6.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-7.jpg</figcaption>
-      </figure>
-      <figure class="foto-item">
-        <button class="foto-item__del-btn" type="button" >Удалить</button>
-        <img class="foto-item__icon" src="#" alt="placehold" width="50" height="50">
-        <figcaption class="foto-item__file">img-8.jpg</figcaption>
-      </figure>
-    </div>
+    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--fotos">
+      <h2>Ваши фотографии из поездки*</h2>
+      <input type="file" multiple id="btn-foto-load" name="foto-load">
+      <label for="btn-foto-load">Загрузить фото</label>
+      <div class="foto-container">
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-1.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-2.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-3.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-4.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-5.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-6.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-7.jpg</div>
+        </div>
+        <div class="foto-item">
+          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
+          <div class="foto-item__file">img-8.jpg</div>
+        </div>
+      </div>
+    </fieldset>
 
     <button class="frm-contest__btn-submit" type="submit">Отправить форму</button>
     <div class="frm-contest__required-desc">*-Обязательные поля</div>
   </form>
   <footer class="contest-footer">
-    <a class="logo logo--glasse-img" href="index.html">Pink</a>
-    <div class="social-links">
+    <a class="contest-footer__logo" href="index.html">Pink</a>
+    <div class="contest-footer__social-links social-links">
       <a class="social-links__link social-links__link--tw" href="#">Twitter</a>
       <a class="social-links__link social-links__link--fb" href="#">Facebook</a>
       <a class="social-links__link social-links__link--yt" href="#">You tube</a>
