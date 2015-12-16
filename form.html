@@ -69,18 +69,32 @@
       <label for="frm-travel-companions">Количество попутчиков</label>
       <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
       <div class="companion-wrapper">
-        <label for="frm-contest-companion1">№ Имя:*</label>
-        <span class="frm-contest__companion-num">1</span>
-        <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
-        <label for="frm-contest-companion-nick1">Прозвище</label>
-        <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
+        <div class="companion-wrapper-col-1">
+          <lable class="col-label">№</lable>
+          <input disabled type="text" name="companion-number" value="1">
+        </div>
+        <div class="companion-wrapper-col-2">
+          <label for="frm-contest-companion1">Имя:*</label>
+          <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
+        </div>
+        <div class="companion-wrapper-col-3">
+          <label for="frm-contest-companion-nick1">Прозвище</label>
+          <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
+        </div>
       </div>
       <div class="companion-wrapper">
-        <label for="frm-contest-companion2">№ Имя:*</label>
-        <span class="frm-contest__companion-num">2</span>
-        <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
-        <label for="frm-contest-companion-nick2">Прозвище</label>
-        <input placeholder="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
+        <div class="companion-wrapper-col-1">
+          <label>№</label>
+          <input disabled type="text" name="companion-number" value="2">
+        </div>
+        <div class="companion-wrapper-col-2">
+          <label for="frm-contest-companion2">Имя:*</label>
+          <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
+        </div>
+        <div class="companion-wrapper-col-3">
+          <label for="frm-contest-companion-nick1">Прозвище</label>
+          <input placeholder="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
+        </div>
       </div>
     </fieldset>
 
