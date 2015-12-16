@@ -37,7 +37,7 @@
       бонусную карту! <span>Пожалуйста, заполните
       форму ниже:</span>
     </p>
-    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--player">
+    <fieldset class="frm-contest__player">
       <label for="frm-contest-name">Имя:*</label>
       <input placeholder="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name" required>
       <label for="frm-contest-surname">Фамилия:*</label>
@@ -45,7 +45,7 @@
       <label for="frm-contest-patronymic">Отчество:*</label>
       <input placeholder="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
     </fieldset>
-    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--travel-app">
+    <fieldset class="frm-contest__travel-app">
       <h2>C каким приложением путешествовали?*</h2>
         <input value="Pink для iOS" required type="radio" checked name="contest-app" id="contest-app-ios">
         <label for="contest-app-ios">Pink для iOS</label>
@@ -55,8 +55,8 @@
         <label for="contest-app-wp">Windows Phone</label>
     </fieldset>
 
-    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--travel-period">
-      <h2>Когда ва путешествовали?*</h2>
+    <fieldset class="frm-contest__travel-period">
+      <h2>Когда вы путешествовали?*</h2>
       <input required placeholder="1 апреля 2015" type="text" name="contest-date-begin" id="frm-contest-date-begin">
       <label for="frm-contest-date-begin">Дата выезда</label>
       <input required placeholder="10 дней" type="text" name="contest-days" id="frm-contest-days">
@@ -65,12 +65,12 @@
       <label for="frm-contest-date-end">Дата возвращения</label>
     </fieldset>
 
-    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--companions">
+    <fieldset class="frm-contest__companions">
       <label for="frm-travel-companions">Количество попутчиков</label>
       <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
       <div class="companion-wrapper">
         <div class="companion-wrapper-col-1">
-          <lable class="col-label">№</lable>
+          <label>№</label>
           <input disabled type="text" name="companion-number" value="1">
         </div>
         <div class="companion-wrapper-col-2">
@@ -98,7 +98,7 @@
       </div>
     </fieldset>
 
-    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--goals">
+    <fieldset class="frm-contest__goals">
       <h2>Ваши безбашенные достижения в путешествии
       </h2>
       <label>
@@ -127,7 +127,7 @@
       </label>
     </fieldset>
 
-    <fieldset class="frm-contest__fields-group  frm-contest__fields-group--fotos">
+    <fieldset class="frm-contest__fotos">
       <h2>Ваши фотографии из поездки*</h2>
       <input type="file" multiple id="btn-foto-load" name="foto-load">
       <label for="btn-foto-load">Загрузить фото</label>
