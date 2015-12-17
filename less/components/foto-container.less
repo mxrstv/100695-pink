@@ -10,9 +10,9 @@
   width: 68px;
   position: relative;
   margin-right: 38px;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   &__icon {
-    margin-bottom: 5px;
+    //margin-bottom: 5px;
   }
   &__file {
     font-size: 12px;
@@ -21,7 +21,8 @@
   }
   &__del-btn {
     position: absolute;
-    font-size: 0;
+    color: @input-border-color;
+    font-size: 20px;
     width: 32px;
     height: 32px;
     background-color: white;
@@ -30,7 +31,8 @@
     right: -16px;
     top: -16px;
   }
+  &:nth-of-type(3n) {
+    margin-right: 0;
 }
-.foto-item:nth-of-type(3n) {
-  margin-right: 0;
+
 }

@@ -8,9 +8,11 @@
 </head>
 <body>
   <header class="main-header">
+
     <div class="top-menu">
       <a class="top-menu__logo" href="#">Pink</a>
       <a class="top-menu__btn" href="#">Menu</a>
+
       <nav class="main-menu">
         <ul>
           <li>
@@ -27,169 +29,192 @@
           </li>
         </ul>
       </nav>
+
     </div>
+
     <h1 class="main-header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
 
   <form class="frm-contest" enctype="multipart/form-data" action="echo" method="post">
+
     <p class="frm-contest__text">Поделитесь своей историей и получите шанс
       выиграть ценный приз — 1000 миль на вашу
       бонусную карту! <span>Пожалуйста, заполните
       форму ниже:</span>
     </p>
 
-    <fieldset class="frm-contest__player">
-      <label for="frm-contest-name">Имя:*</label>
-      <input placeholder="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name" required>
-      <label for="frm-contest-surname">Фамилия:*</label>
-      <input placeholder="Укажите фамилию" type="text" name="contest-surname" id="frm-contest-surname" required>
-      <label for="frm-contest-patronymic">Отчество:*</label>
-      <input placeholder="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
+
+    <fieldset class="frm-contest-player">
+      <label class="frm-contest-player__label" for="frm-contest-name">Имя:*</label>
+      <input class="frm-contest-player__input" placeholder="Введите ваше имя" type="text" name="contest-name" id="frm-contest-name" required>
+      <label class="frm-contest-player__label" for="frm-contest-surname">Фамилия:*</label>
+      <input class="frm-contest-player__input" placeholder="Укажите фамилию" type="text" name="contest-surname" id="frm-contest-surname" required>
+      <label class="frm-contest-player__label" for="frm-contest-patronymic">Отчество:*</label>
+      <input class="frm-contest-player__input" placeholder="Ну и отчество тоже" type="text" name="contest-patronymic" id="frm-contest-patronymic">
     </fieldset>
 
-    <fieldset class="frm-contest__travel-app">
-      <h2>C каким приложением путешествовали?*</h2>
-      <input value="Pink для iOS" required type="radio" checked name="contest-app" id="contest-app-ios">
-      <label for="contest-app-ios">Pink для iOS</label>
-      <input value="Pink для Android" required type="radio" name="contest-app" id="contest-app-android">
-      <label for="contest-app-android">Pink для Android</label>
-      <input value="Windows Phone" required type="radio" name="contest-app" id="contest-app-wp">
-      <label for="contest-app-wp">Windows Phone</label>
+
+    <fieldset class="frm-contest-travel-app">
+      <h2 class="frm-contest-travel-app__header">C каким приложением путешествовали?*</h2>
+      <input class="frm-contest-travel-app__input" value="Pink для iOS" required type="radio" checked name="contest-app" id="contest-app-ios">
+      <label class="frm-contest-travel-app__label" for="contest-app-ios">Pink для iOS</label>
+      <input class="frm-contest-travel-app__input" value="Pink для Android" required type="radio" name="contest-app" id="contest-app-android">
+      <label class="frm-contest-travel-app__label" for="contest-app-android">Pink для Android</label>
+      <input class="frm-contest-travel-app__input" value="Windows Phone" required type="radio" name="contest-app" id="contest-app-wp">
+      <label class="frm-contest-travel-app__label" for="contest-app-wp">Windows Phone</label>
     </fieldset>
 
-    <fieldset class="frm-contest__travel-period">
-      <h2>Когда вы путешествовали?*</h2>
-      <input required placeholder="1 апреля 2015" type="text" name="contest-date-begin" id="frm-contest-date-begin">
-      <label for="frm-contest-date-begin">Дата выезда</label>
-      <input required placeholder="10 дней" type="text" name="contest-days" id="frm-contest-days">
-      <label for="frm-contest-days">Продолжительность</label>
-      <input required disabled placeholder="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
-      <label for="frm-contest-date-end">Дата возвращения</label>
+
+    <fieldset class="frm-contest-travel-period">
+      <h2 class="frm-contest-travel-period__header">Когда вы путешествовали?*</h2>
+      <input class="frm-contest-travel-period__input" required placeholder="1 апреля 2015" type="text" name="contest-date-begin" id="frm-contest-date-begin">
+      <label class="frm-contest-travel-period__label" for="frm-contest-date-begin">Дата выезда</label>
+      <input class="frm-contest-travel-period__input" required placeholder="10 дней" type="text" name="contest-days" id="frm-contest-days">
+      <label class="frm-contest-travel-period__label" for="frm-contest-days">Продолжительность</label>
+      <input class="frm-contest-travel-period__input" required disabled placeholder="1 апреля 2015" type="text" name="contest-date-end" id="frm-contest-date-end">
+      <label class="frm-contest-travel-period__label" for="frm-contest-date-end">Дата возвращения</label>
     </fieldset>
 
-    <fieldset class="frm-contest__companions">
-      <label for="frm-travel-companions">Количество попутчиков</label>
-      <input required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
-      <div class="companion-wrapper">
-        <div class="companion-wrapper-col-1">
-          <label>№</label>
-          <input disabled type="text" name="companion-number" value="1">
+
+    <fieldset class="frm-contest-companions">
+      <label class="frm-contest-companions__label" for="frm-travel-companions">Количество попутчиков</label>
+      <input class="frm-contest-companions__input--plus-minus" required placeholder="2 чел" type="text" name="travel-companions" id="frm-travel-companions">
+
+      <div class="frm-contest-companions-wrapper">
+        <div class="frm-contest-companions-wrapper-col-1">
+          <label class="frm-contest-companions-wrapper-col-1__label">№</label>
+          <input class="frm-contest-companions-wrapper-col-1__input" disabled type="text" name="companion-number" value="1">
         </div>
-        <div class="companion-wrapper-col-2">
-          <label for="frm-contest-companion1">Имя:*</label>
-          <input required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
+        <div class="frm-contest-companions-wrapper-col-2">
+          <label class="frm-contest-companions-wrapper-col-2__label" for="frm-contest-companion1">Имя:*</label>
+          <input class="frm-contest-companions-wrapper-col-2__input" required placeholder="Введите ваше имя" type="text" name="companion-num1" id="frm-contest-companion1">
         </div>
-        <div class="companion-wrapper-col-3">
-          <label for="frm-contest-companion-nick1">Прозвище</label>
-          <input placeholder="Ну как же без этого" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
+        <div class="frm-contest-companions-wrapper-col-3">
+          <label class="frm-contest-companions-wrapper-col-3__label" for="frm-contest-companion-nick1">Прозвище</label>
+          <input class="frm-contest-companions-wrapper-col-3__input" placeholder="Ну как же без этого!" type="text" name="companion-nick1" id="frm-contest-companion-nick1">
         </div>
       </div>
-      <div class="companion-wrapper">
-        <div class="companion-wrapper-col-1">
-          <label>№</label>
-          <input disabled type="text" name="companion-number" value="2">
+      <div class="frm-contest-companions-wrapper">
+        <div class="frm-contest-companions-wrapper-col-1">
+          <label class="frm-contest-companions-wrapper-col-1__label">№</label>
+          <input class="frm-contest-companions-wrapper-col-1__input" disabled type="text" name="companion-number" value="2">
         </div>
-        <div class="companion-wrapper-col-2">
-          <label for="frm-contest-companion2">Имя:*</label>
-          <input required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
+        <div class="frm-contest-companions-wrapper-col-2">
+          <label class="frm-contest-companions-wrapper-col-2__label" for="frm-contest-companion2">Имя:*</label>
+          <input class="frm-contest-companions-wrapper-col-2__input" required placeholder="Введите ваше имя" type="text" name="companion-num2" id="frm-contest-companion2">
         </div>
-        <div class="companion-wrapper-col-3">
-          <label for="frm-contest-companion-nick1">Прозвище</label>
-          <input placeholder="Ну как же без этого" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
+        <div class="frm-contest-companions-wrapper-col-3">
+          <label class="frm-contest-companions-wrapper-col-3__label" for="frm-contest-companion-nick1">Прозвище</label>
+          <input class="frm-contest-companions-wrapper-col-3__input" placeholder="Ну как же без этого!" type="text" name="companion-nick2" id="frm-contest-companion-nick2">
         </div>
       </div>
+
     </fieldset>
+
 
     <fieldset class="frm-contest__goals">
-      <h2>Ваши безбашенные достижения в путешествии
-      </h2>
-      <label>
-        <input type="checkbox" checked name="g1">
+      <h2 class="frm-contest__goals__header">Ваши безбашенные достижения в путешествии</h2>
+
+      <input class="frm-contest__goals__input" type="checkbox" checked name="g1" id="goal-1">
+      <label class="frm-contest__goals__label" for="goal-1">
         Сделал селфи с акулой
       </label>
-      <label>
-        <input type="checkbox" checked name="g2">
-        Обгорел на пляже
+      <input class="frm-contest__goals__input" type="checkbox" checked name="g2" id="goal-2">
+      <label class="frm-contest__goals__label" for="goal-2">
+      Обгорел на пляже
       </label>
-      <label>
-        <input type="checkbox" name="g3">
-        Видел Чака Норриса
+      <input class="frm-contest__goals__input" type="checkbox" name="g3" id="goal-3">
+      <label class="frm-contest__goals__label" for="goal-3">
+      Видел Чака Норриса
       </label>
-      <label>
-        <input type="checkbox" name="g4">
+      <input class="frm-contest__goals__input" type="checkbox" name="g4" id="goal-4">
+      <label class="frm-contest__goals__label" for="goal-4">
         Накупил сувениров
       </label>
-      <label>
-        <input type="checkbox" checked name="g5">
+      <input class="frm-contest__goals__input" type="checkbox" checked name="g5" id="goal-5">
+      <label class="frm-contest__goals__label" for="goal-5">
         Удержал башню
       </label>
-      <label>
-        <input type="checkbox" name="g6">
+      <input class="frm-contest__goals__input" type="checkbox" name="g6" id="goal-6">
+      <label class="frm-contest__goals__label" for="goal-6">
         Разгромил отель
       </label>
     </fieldset>
 
+
     <fieldset class="frm-contest__fotos">
-      <h2>Ваши фотографии из поездки*</h2>
-      <input type="file" multiple id="btn-foto-load" name="foto-load">
-      <label for="btn-foto-load">Загрузить фото</label>
-      <div class="foto-container">
+      <h2 class="frm-contest__fotos__header">Ваши фотографии из поездки*</h2>
+      <input class="frm-contest__fotos__file-btn" type="file" multiple id="btn-foto-load" name="foto-load">
+      <label class="frm-contest__fotos__file-btn-label" for="btn-foto-load">Загрузить фото</label>
+
+      <div class="foto-container  frm-contest__foto-container">
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-1.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-2.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-3.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-4.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-5.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-6.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-7.jpg</div>
         </div>
         <div class="foto-item">
-          <button class="foto-item__del-btn" type="button" >Удалить</button>
+          <button class="foto-item__del-btn" type="button" >&times;</button>
           <img class="foto-item__icon" src="img/temp-foto-item.png" alt="placehold" width="67" height="68">
           <div class="foto-item__file">img-8.jpg</div>
         </div>
       </div>
+
     </fieldset>
 
-    <button class="frm-contest__btn-submit" type="submit">Отправить форму</button>
-    <div class="frm-contest__required-desc">*-Обязательные поля</div>
+    <div class="frm-contest-footer">
+      <button class="frm-contest__btn-submit" type="submit">Отправить форму</button>
+      <div class="frm-contest__required-desc"><span>*</span> &mdash; Обязательные поля</div>
+    </div>
+
   </form>
 
+
   <footer class="contest-footer">
-    <a class="contest-footer__logo" href="index.html">Pink</a>
+    <a class="contest-footer__logo" href="index.html">
+      <img src="img/logotype-white-tablet.svg" alt="placehold" width="145" height="40">
+    </a>
     <div class="contest-footer__social-links social-links">
       <a class="social-links__link social-links__link--tw" href="#">Twitter</a>
       <a class="social-links__link social-links__link--fb" href="#">Facebook</a>
-      <a class="social-links__link social-links__link--yt" href="#">You tube</a>
+      <a class="social-links__link social-links__link--yt" href="#">YouTube</a>
     </div>
-    <a class="copyright" href="#">Разработано</a>
+    <a class="copyright" href="#">
+      Разработано
+      <img src="img/htmlacademy.svg" alt="placehold" width="27" height="34">
+    </a>
   </footer>
+
 
 </body>
 </html>
