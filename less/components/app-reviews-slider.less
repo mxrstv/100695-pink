@@ -1,0 +1,35 @@
+.app-reviews-slider {
+  width: 320px;
+  margin: 0 auto;
+  &__switch {
+    margin: 0 auto;
+  }
+}
+
+.app-review {
+  padding-top: 42px;
+  padding-bottom: 26px;
+  &__user {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: none;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  &__text {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: none;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+  &:not([class$="--active"]) {
+    display: none;
+  }
+}

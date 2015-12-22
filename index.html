@@ -98,30 +98,50 @@
       <p class="info__item">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       <h3 class="info__item-header">Заводит новых друзей</h3>
       <p class="info__item">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+
       <img src="#" alt="placehold" width="50" height="50">
     </section>
 
-    <section class="reviews">
-      <div class="slider">
-        <div class="slider__item">
-          <article class="app-review">
-            <h1 class="app-review__user">Николай Петров</h1>
-            <p class="app-review__text">
-              «Это приложение перевернуло мой мир и
-              позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой в
-              комментариях к выложенной фотографии!»
-            </p>
-          </article>
-        </div>
-        <div class="slider-switch  reviews__slider-switсh">
-          <i></i>
-          <i class="slider__switch--active"></i>
-          <i></i>
-        </div>
+
+    <section class="app-reviews-slider">
+      <article class="app-review">
+        <h1 class="app-review__user">Николай Петров</h1>
+        <p class="app-review__text">
+          «Это приложение перевернуло мой мир и
+          позволило по-новому взглянуть на
+          привычные серые вещи! А еще я
+          познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!»
+        </p>
+      </article>
+      <article class="app-review  app-review--active">
+        <h1 class="app-review__user">Николай Петров</h1>
+        <p class="app-review__text">
+          «Это приложение перевернуло мой мир и
+          позволило по-новому взглянуть на
+          привычные серые вещи! А еще я
+          познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!»
+        </p>
+      </article>
+      <article class="app-review">
+        <h1 class="app-review__user">Николай Петров</h1>
+        <p class="app-review__text">
+          «Это приложение перевернуло мой мир и
+          позволило по-новому взглянуть на
+          привычные серые вещи! А еще я
+          познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!»
+        </p>
+      </article>
+
+      <div class="slider-switch  app-reviews-slider__switсh">
+        <i class="slider-switch__item"></i>
+        <i class="slider-switch__item  slider-switch__item--active"></i>
+        <i class="slider-switch__item"></i>
       </div>
     </section>
+
 
     <section class="shop">
       <div class="slider">
@@ -160,9 +180,9 @@
 
         </div>
       <div class="slider-switch  shop__slider-switch">
-        <i></i>
-        <i class="slider__switch--active"></i>
-        <i></i>
+        <i class="slider-switch__item"></i>
+        <i class="slider-switch__item  slider-switch__item--active"></i>
+        <i class="slider-switch__item"></i>
       </div>
     </section>
 
@@ -174,11 +194,14 @@
       <p class="contacts__item">mail@htmlacademy.ru</p>
       <h2 class="contacts__item-header">Приезжайте в гости:</h2>
       <p class="contacts__item">ул. Большая Конюшенная, 19/8</p>
-      <div class="contacts__map">
-        <img src="img/triangle-white-footer.svg" alt="placehold">
-        <div>
-          <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5gwinW-ZUjU8ZKu_F5Zh2OKnOkDtBhIl&width=100%&height=200px&lang=ru_RU&sourceType=constructor"></script>
-        </div>
+      <div class="contacts-map">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5gwinW-ZUjU8ZKu_F5Zh2OKnOkDtBhIl&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
+        <img class="contacts-map__decor-mask" src="img/triangle-white-footer.svg" alt="placehold">
+        <svg class="contacts-map__marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+          <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+          <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+        </svg>
       </div>
     </section>
 

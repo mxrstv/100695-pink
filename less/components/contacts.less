@@ -1,8 +1,8 @@
-.contacts{
+.contacts {
   width: 320px;
   margin: 0 auto;
   padding-top: 48px;
-  &__text{
+  &__text {
     color: black;
     font-size: 24px;
     line-height: 30px;
@@ -35,12 +35,21 @@
       margin-bottom: 38px;
     }
   }
-  &__map {
+  &-map {
+    width: 320px;
+    height: 200px;
     position: relative;
-    img{
+    &__decor-mask {
       position: absolute;
       z-index: 100;
-      width: 320px;
+      width: 100%;
+      left: 0;
+      top:0;
+    }
+    &__marker {
+      position: absolute;
+      left: 142px;
+      top: 94px;
     }
   }
 }
