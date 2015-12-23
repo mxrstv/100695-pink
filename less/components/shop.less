@@ -2,46 +2,53 @@
   width: 320px;
   overflow: hidden;
   margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 47px;
+  background: linear-gradient(174.3deg, white 5%, @light-gray-back-color 5%) no-repeat 100%;
   @td-width: 276px;
-  .rates{
+  .rates {
     width: (@td-width+2)*3;
     transform: translateX(-((@td-width)-20));
-    &__item{
+    &__item {
       background-color: @rates-head-color;
-      border: 2px solid @rates-border-color;
-      padding: 24px 0;
+      border: 1px solid @rates-border-color;
+      padding: 19px 0;
       width: 276px;
     }
-    &__name{
+    &__name {
       color: white;
       font-size: 18px;
       line-height: 30px;
       font-weight: bold;
-      //padding: 0 48px;
       text-align: center;
       text-transform: uppercase;
     }
-    &__price{
+    &__price {
       color: white;
       font-size: 24px;
       line-height: 30px;
       font-weight: lighter;
-      //padding: 0 48px;
       text-align: center;
       text-transform: uppercase;
     }
-    &__feature{
-      border: 2px solid @rates-border-color;
+    &__feature {
+      padding: 20px 20px;
+      border: 1px solid @rates-border-color;
+      background-color: white;
+      background: url(../img/no.svg) no-repeat 88% center;
       color: black;
       font-size: 14px;
-      line-height: 30px;
+      line-height: 20px;
       font-weight: normal;
-      text-align: center;
+      text-align: left;
       text-transform: uppercase;
+      &--checked {
+        background: url(../img/yes.svg) no-repeat 88% center;
+      }
     }
+    margin-bottom: 30px;
   }
   &__slider-switch{
-    padding-top: 40px;
 
   }
 }
