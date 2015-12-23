@@ -1,12 +1,12 @@
-.main-menu{
+.main-menu {
   display:none;
   position: absolute;
   z-index: 200;
-  top: 0;
+  top: 66px;
   left: 0;
   width: 320px;
   background-color: @menu-color;
-  ul{
+  ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -14,10 +14,15 @@
     flex-direction: column;
     justify-content: center;
   }
-  li{
-    padding:24px 0;
+  li {
+    padding: 16px 0;
+    border-top: 1px solid black;
+    box-shadow: inset 0 1px 0 0 #495461;
+    &:last-of-type {
+      border-bottom: 1px solid black;
+    }
   }
-  a{
+  a {
     display:flex;
     justify-content: center;
     font-size: 18px;

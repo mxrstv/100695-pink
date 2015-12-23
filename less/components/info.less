@@ -2,8 +2,17 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 40px;
-  background-color: @light-gray-back-color;
-  &__item-single{
+  padding-bottom: 325px;
+  //background-color: @light-gray-back-color;
+  background-image:
+    url(../img/iphone-screen-mobile-3@1x.png),
+    url(../img/iphone-case-mobile@1x.png),
+    linear-gradient(174.3deg, white 24%, @light-gray-back-color 24%);
+  background-size: 142px 244px, 156px 278px, cover;
+  background-position: bottom, bottom, 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  &__item-single {
     color: black;
     font-size: 24px;
     line-height: 30px;
@@ -12,11 +21,11 @@
     margin-bottom: 25px;
     padding: 0 58px;
     text-align: center;
-    &:last-of-type{
+    &:last-of-type {
       margin-bottom: 112px;
     }
   }
-  &__item-header{
+  &__item-header {
     color: black;
     font-size: 18px;
     line-height: 24px;
@@ -26,7 +35,7 @@
     margin-top:0;
     margin-bottom: 14px;
   }
-  &__item{
+  &__item {
     color: black;
     font-size: 14px;
     line-height: 24px;
@@ -35,6 +44,11 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 28px;
-
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
+
+
+
 }
